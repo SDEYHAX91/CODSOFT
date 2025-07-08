@@ -29,7 +29,9 @@ class Calc:     ## CLASS
 
     def div(self, x, y):            ## DIVISION
 
-        if x % y == 0:
+        if y == 0:
+            print("Can't divide by 0.\n")
+        elif x % y == 0:
             print(f"{x} / {y} = {int(x / y)}")
         else:
             print(f"{x} / {y} = {round((x / y), 4)}")
